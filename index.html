@@ -156,6 +156,57 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2020/03/30/JAVA%E5%AD%A6%E4%B9%A0Day2/">
+                JAVA学习Day2
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2020-03-30</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>前排建议使用：notepad++文本编辑器<br>（别问，问就是好用）</p>
+<p>标识符注意！！！：<br>标识符严格区分大小写<br>标识符不可以数字开头，不可以单独使用关键字或保留字（但是可以包含）<br>标识符可以是英文字母，数字 , _  ,  $</p>
+<hr>
+<p>java中变量的定义：数据类型 变量名 = 变量的值<br>例如：int i = 1;<br>变量的作用域在一对{}之间有效<br>注意和C的区别： java中 int  i ； 是错误的  因为没有给变量赋值</p>
+<hr>
+<p>八种基本数据类型：<br>数值型（整数类型【byte，short，int，long】，浮点类型【float，double】）<br>字符型（char）    布尔型（boolean） </p>
+<p>类型    占用存储空间      范 围<br>byte     1字节=8bit     -128<del>127<br>short     2字节         -2^15</del>2^15-1<br>int     4字节         -2^31<del>2^31-1<br>long     8字节          -2^63</del>2^63-1</p>
+<p>示例：byte b =126<br>          int i = 1<br>          short s =1<br>          long a = 3l  (不要忘记加 L )</p>
+<p>单精度float       4字节（7位精度）<br>双精度double   8字节（16位精度）<br>例： float f = 1.22f<br>        double b = 1.22</p>
+<p>字符：用英文的单引号括起来的单个字母，数字，符号<br>例如： char c1 = ‘a’ ;<br>           char c2 = ‘ &#39; ‘ ;  &lt;—表示定义单引号，“\”为转义字符</p>
+<p>转义字符    说明<br>\b    退格符<br>\n    换行符<br>\r    回车符<br>\t    制表符<br>&quot;    双引号<br>&#39;    单引号<br>\       反斜线</p>
+<p>boolean布尔类型： true 和 false   (不是1和0！！！)<br>例如： boolean b1 = true</p>
+<p>注：除了八种基本数据类型其余的都是引用数据类型</p>
+<p>引用数据类型：<br>类（class）&lt;—string字符串在这里    接口（interface）         数组（ [ ] ）</p>
+<hr>
+<p>字符串：由0到多个数字字母符号共同组成的一个串，这个串要用英文的双引号括起来<br>String str = “hello kunkun”;<br>System.out.println(str);</p>
+<p>凡是引用类型都可以用null作为值，也就意味着可以在初始化的时候赋值为null<br>String是引用类型，也就是说可以用null作为值</p>
+<p>若 String s0 = “hello”<br>     String s1 = “hello”<br>则只能由一个hello。假设hello的内存地址xxxx，声明s0变量时给s0赋值实际上让s0变量引用hello的内存地址xxxx<br>当再声明变量s1也赋值hello时,实际上也是直接把已经存在的hello的内存地址给s1引用<br>也可以这样写： String s3 = “hel” + “lo”</p>
+<p>关于数据类型自动转换：小容量可以赋值给大容量 反过来不行<br>byte,char,short—&gt;int—&gt;long—&gt;float—&gt;double<br>注：byte,char,short之间不会相互转换,他们三者在计算时首先转换为int类型</p>
+<p>当把任何类型的值和字符串进行连接运算时(+),基本类型的值将自动转化为字符串类型。</p>
+<hr>
+<p>关于转换问题：<br>byte b = 9;<br>int i = b;<br>以上这两行属于正常隐式转换数据类型（自动的）<br>int k = 7;<br>byte b0 = (byte)k;<br>以上属于强制转换数据类型，转换的数据类型用英文的小括号括起来（手动的）<br>字符串类型转换后期再总结<br>布尔类型不可以转换为其他数据类型</p>
+<hr>
+<p>关于算术运算符：<br>加减法与四则运算不在多讲<br>自增（前）：先运算后取值 例如：a = 2; b = ++a;  结果是a=3;b=3<br>自增（后）：先取值后运算 例如：a = 2; b = a++;  结果是a=3;b=2<br>自减同理（i++先用后加，++i先加后用）</p>
+<p>关于%模运算：<br>System.out.println(5%-2);的值为1，就是说%右边带负号和不带一样<br>System.out.println(-5%2);的值为-1，%左边的正负才影响最后的值</p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2020/03/29/JAVA%E5%AD%A6%E4%B9%A0Day1/">
                 JAVA学习Day1
             </a>
@@ -302,6 +353,10 @@ height: 100%; left: 0; top: 0;"></iframe></div>
         <ul>
             
             <li>
+                <a class="footer-post" href="/2020/03/30/JAVA%E5%AD%A6%E4%B9%A0Day2/">JAVA学习Day2</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2020/03/29/JAVA%E5%AD%A6%E4%B9%A0Day1/">JAVA学习Day1</a>
             </li>
             
@@ -311,10 +366,6 @@ height: 100%; left: 0; top: 0;"></iframe></div>
             
             <li>
                 <a class="footer-post" href="/2020/03/25/Hexo%E4%BD%BF%E7%94%A8%E6%97%A5%E8%AE%B0/">Hexo使用日记</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2020/03/25/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8F%82%E8%80%83%E8%A7%86%E9%A2%91/">搭建博客视频</a>
             </li>
             
         </ul>
